@@ -1,0 +1,10 @@
+sudo kafka-console-producer --bootstrap-server localhost:9092 --topic jaeshim-source-20220812  --property parse.key=true --property key.separator=":"
+
+
+sudo kafka-producer-perf-test \
+    --topic jaeshim-source-20220812 \
+    --num-records 10000 \
+    --record-size 100 \
+    --throughput 10 \
+    --producer-props acks=1 \
+    bootstrap.servers=localhost:9092
