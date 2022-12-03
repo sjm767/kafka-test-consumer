@@ -5,3 +5,4 @@
 :docs: https://docs.spring.io/initializr/docs/current-SNAPSHOT/reference
 :service: https://github.com/spring-io/start.spring.io
 
+Spring Kafka 기반의 Test Consumer
